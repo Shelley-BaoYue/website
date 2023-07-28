@@ -12,19 +12,31 @@ export default function CaseStudies() {
   return (
     <Layout>
       <div className="case-studies-container">
-        <h1>
-          <Translate>Case Studies</Translate>
-        </h1>
+        <div className="case-studies-header">
+          <div className="case-studies">
+            <Translate>Case Studies</Translate>
+          </div>
+          <div className="case-studies-subtitle">
+            <div>
+              <Translate>Case Studies description</Translate>
+            </div>
+            <button className="button" type="button">
+              <a href="https://github.com/kubeedge/website" target="_blank">
+                <Translate>post your case</Translate>
+              </a>
+            </button>
+          </div>
+        </div>
+
         <div className="case-list">
-          <Row gutter={[24, 24]}>
-            {casestudiesGlobalData.map((item) => (
-              <Col sm={24} md={12} lg={6}>
+          <Row gutter={[48, 48]}>
+            {casestudiesGlobalData.concat(casestudiesGlobalData).concat(casestudiesGlobalData).map((item) => (
+              <Col sm={24} md={12} lg={8}>
                 <CaseCard
                   title={item.metadata?.title}
                   subTitle={item.metadata?.frontMatter?.subTitle}
                   date={item.metadata?.formattedDate}
                   desc={item.metadata?.description}
-                  imgUrl={item.metadata?.frontMatter?.background}
                   link={item.metadata?.permalink}
                   tags={item.metadata?.frontMatter?.tags}
                 />

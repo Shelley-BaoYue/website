@@ -16,17 +16,16 @@ export default function CaseCard(props) {
 
   return (
     <div className="case-card" onClick={() => history.push(link)}>
-      <div className="image">
-        <img src={imgUrl} />
-      </div>
+      <div className="background" />
+
       <div className="title">
-        <div className="main">
-          <h2>{title}</h2>
-        </div>
-        <h3 className="sub">{subTitle}</h3>
+          {title}
+          <div className="desc">{desc}</div>
       </div>
-      <div className="desc">{desc}</div>
-      <div className="date">{date}</div>
+      <div className="block-sperator"></div>
+      <div>
+          <h3 className="sub">{subTitle}</h3>
+      </div>
       <div className="tags">
         {tags.map((item, index) => (
           <div className="tag" key={index}>
@@ -34,6 +33,7 @@ export default function CaseCard(props) {
           </div>
         ))}
       </div>
+      <div className="date">{date}</div>
     </div>
   );
 }
