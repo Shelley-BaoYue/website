@@ -1,0 +1,38 @@
+{
+  "title": {
+    "message": "KubeEdge",
+    "description": "The title in the navbar"
+  },
+  "item.label.Documentation": {
+    "message": "Documentation",
+    "description": "Navbar item with label Documentation"
+  },
+  "item.label.Blog": {
+    "message": "Blog",
+    "description": "Navbar item with label Blog"
+  },
+  "item.label.Case Studies": {
+    "message": "Case Studies",
+    "description": "Navbar item with label Case Studies"
+  },
+  "item.label.Downloads": {
+    "message": "Downloads",
+    "description": "Navbar item with label Downloads"
+  },
+  "item.label.v1.14": {
+    "message": "v1.14",
+    "description": "Navbar item with label v1.14"
+  },
+  "item.label.v1.13": {
+    "message": "v1.13",
+    "description": "Navbar item with label v1.13"
+  },
+  "item.label.v1.12": {
+    "message": "v1.12",
+    "description": "Navbar item with label v1.12"
+  },
+  "item.label.v1.11": {
+    "message": "v1.11",
+    "description": "Navbar item with label v1.11"
+  }
+}
