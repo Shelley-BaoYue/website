@@ -2,6 +2,7 @@ import React from "react";
 import SectionContainer from "../sectionContainer";
 import Translate from "@docusaurus/Translate";
 import Link from "@docusaurus/Link";
+import useDocusaurusContext from "@docusaurus/useDocusaurusContext";
 import "./index.scss";
 
 const supportList = [
@@ -204,11 +205,17 @@ const supportList = [
 ];
 
 export default function Supporters() {
+  const { i18n } = useDocusaurusContext();
   return (
     <SectionContainer className={"supporterContainer"}>
       <h1>
         <Translate>Supporters</Translate>
       </h1>
+      <a className={"supporterLink"} href={`https://kubeedge.io/${i18n.currentLocale}/docs/community/supporters`} target="_blank">
+        <h2 >
+          <Translate>Welcome to Join the Growing Community</Translate>
+        </h2>
+      </a>
       <div className={"supporterBoxContainer"}>
         {supportList.map((item, index) => (
           <div key={index} className="supporterBox">

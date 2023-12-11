@@ -407,5 +407,8 @@
   },
   "POST YOUR CASE": {
     "message": "上传你的案例"
+  },
+  "Welcome to Join the Growing Community": {
+    "message": "欢迎加入KubeEdge社区"
   }
 }
